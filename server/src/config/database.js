@@ -7,7 +7,7 @@ module.exports = {
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
   storage: process.env.DB_STORAGE,
-  logging: process.env.NODE_ENV === 'development',
+  logging: process.env.NODE_ENV === 'development' ? console.log : false,
   define: {
     timestamps: true,
     underscored: true,
