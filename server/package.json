@@ -1,12 +1,12 @@
 {
   "name": "dermacorpore_server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/server.js",
   "license": "MIT",
   "scripts": {
     "predev": "NODE_ENV=development sequelize db:migrate",
     "dev": "NODE_ENV=development nodemon src/server.js",
-    "dev:debug": "NODE_ENV=development node --inspect-brk -r sucrase/register src/server.ts ",
+    "dev:debug": "NODE_ENV=development node --inspect-brk -r sucrase/register src/server.js ",
     "build": "sucrase ./src -d ./dist --transforms imports",
     "start": "node ./build/server.js",
     "pretest": "NODE_ENV=test sequelize db:migrate",
