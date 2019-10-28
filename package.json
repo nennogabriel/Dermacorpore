@@ -1,0 +1,14 @@
+{
+  "name": "Dermacorpore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nennogabriel/Dermacorpore.git",
+  "author": "Pedro Nascimento <nennogabriel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "server",
+    "web",
+    "mobile"
+  ]
+}
